@@ -1,4 +1,7 @@
-#include "AT24C16N.hpp"
+#include <Wire.h>
+#include <AT24C16N.hpp>
+AT24C16N eeprom;
+
 void debug(const AT24C16N& eeprom, const uint8_t page){
 	uint8_t data;
 	Serial.print("\t");
@@ -23,3 +26,12 @@ void debug(const AT24C16N& eeprom, const uint8_t page){
 		Serial.println();
 	}
 }
+void setup(){
+	// Make sure to start I2C communication
+	Wire.begin();
+	// Serial communication for printing to the serial monitor
+	Serial.begin(9600);
+	// Indicate what memory page will be printed
+	eeprom.degug(0);
+}
+void loop(){}
