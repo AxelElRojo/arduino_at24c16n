@@ -32,6 +32,6 @@ void setup(){
 	// Serial communication for printing to the serial monitor
 	Serial.begin(9600);
 	// Indicate what memory page will be printed
-	eeprom.degug(0);
+	debug(eeprom, 0);
 }
 void loop(){}
