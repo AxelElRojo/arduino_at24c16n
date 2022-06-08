@@ -2,7 +2,7 @@
 #include <AT24C16N.hpp>
 AT24C16N eeprom;
 
-void debug(const AT24C16N& eeprom, const uint8_t page){
+void debug(AT24C16N& eeprom, const uint8_t page){
 	uint8_t data;
 	Serial.print("\t");
 	for(uint8_t i=0; i<=0xF; ++i){
