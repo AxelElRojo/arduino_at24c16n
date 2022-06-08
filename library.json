@@ -1,0 +1,13 @@
+{
+	"name" : "Arduino AT24C16N",
+	"keywords" : "AT24C16N, EEPROM, I2C",
+	"description" : "A library that allows communication with an AT24C16N.",
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/AxelElRojo/arduino_at24c16n"
+	},
+	"frameworks" : "arduino",
+	"platforms" : [
+		"atmelavr"
+	]
+}
