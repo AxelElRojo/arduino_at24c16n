@@ -26,3 +26,9 @@ uint8_t AT24C16N::read(const uint8_t page, const uint8_t addr){
 bool AT24C16N::errorOcurred(){
 	return this->error;
 }
+bool AT24C16N::cwrite(const uint16_t addr, const uint8_t data){
+	return this->write(addr/256, addr%256, data);
+}
+uint8_t AT24C16N::cread(const uint16_t addr){
+	return this->read(addr/256, addr%256);
+}
