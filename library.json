@@ -1,5 +1,5 @@
 {
-	"name" : "Arduino AT24C16N",
+	"name" : "AT24C16N",
 	"keywords" : "AT24C16N, EEPROM, I2C",
 	"description" : "A library that allows communication with an AT24C16N.",
 	"repository" : {
