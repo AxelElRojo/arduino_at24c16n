@@ -1,0 +1,9 @@
+# Datatypes (KEYWORD1)
+AT24C16N	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+write	KEYWORD2
+read	KEYWORD2
+cwrite	KEYWORD2
+cwrite	KEYWORD2
+errorOcurred	KEYWORD2
