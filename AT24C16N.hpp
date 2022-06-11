@@ -7,10 +7,11 @@ class AT24C16N{
 	bool error;
 public:
 	AT24C16N();
-	bool write(const uint8_t page, const uint8_t addr, const uint8_t data);
-	uint8_t read(const uint8_t page, const uint8_t addr);
-	bool cwrite(const uint16_t addr, const uint8_t data);
-	uint8_t cread(const uint16_t addr);
+	bool write(const uint16_t addr, const uint8_t data);
+	uint8_t read(const uint16_t addr);
 	bool errorOcurred();
+private:
+	bool hwWrite(const uint8_t page, const uint8_t addr, const uint8_t data);
+	uint8_t hwRead(const uint8_t page, const uint8_t addr);
 };
 #endif
